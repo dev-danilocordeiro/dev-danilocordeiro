@@ -1,5 +1,32 @@
-# 💫 About Me:
-# Danilo Cordeiro | Staff Software Engineer & Arquiteto de Sistemas<br><br>Sou um **Staff Software Engineer** e **Arquiteto de Sistemas** com uma trajetória comprovada na liderança técnica e na entrega de soluções de software de alto impacto. Minha expertise se concentra na **otimização de performance de serviços**, na concepção e evolução de **arquiteturas de microserviços escaláveis** e na implementação de **sistemas distribuídos resilientes**.<br><br>Com uma abordagem estratégica e hands-on, atuo na interseção entre tecnologia e negócio, garantindo que as escolhas arquiteturais impulsionem a inovação e a eficiência operacional. Sou apaixonado por desvendar complexidades técnicas, transformar desafios em oportunidades e capacitar equipes para construir produtos de software de excelência.<br><br>## 🚀 Expertise Técnica & Liderança<br><br>### Core Stack & Otimização de Performance<br><br>- **Kotlin**: Mestre no desenvolvimento de aplicações modernas, reativas e performáticas, utilizando os recursos avançados da linguagem para construir sistemas robustos e de fácil manutenção.<br>- **Java**: Profundo conhecimento do ecossistema Java, com especialização em **JVM Performance Tuning**, Garbage Collection e otimização de threads, garantindo a máxima eficiência e throughput para serviços de missão crítica.<br>- **Spring Boot & Micronaut**: Experiência sólida na construção de APIs e microsserviços de alta performance com frameworks líderes de mercado.<br><br>### Arquitetura de Sistemas & Design Distribuído<br><br>- **Microservices**: Liderança na concepção, implementação e refatoração de arquiteturas baseadas em microserviços, promovendo desacoplamento, escalabilidade horizontal e resiliência.<br>- **Event-Driven Architecture (EDA)**: Design e implementação de sistemas reativos e assíncronos, utilizando filas de mensagens (Kafka, RabbitMQ) e padrões de eventos para comunicação eficiente e processamento distribuído.<br>- **CQRS (Command Query Responsibility Segregation)**: Aplicação estratégica de CQRS para otimizar a performance e a escalabilidade de operações de leitura e escrita, especialmente em domínios complexos com alta demanda.<br>- **Hexagonal Architecture / Ports & Adapters**: Estruturação de aplicações para garantir a separação de preocupações, testabilidade, e adaptabilidade a diferentes tecnologias e infraestruturas.<br>- **System Design**: Habilidade comprovada em projetar sistemas distribuídos do zero, considerando aspectos como escalabilidade, disponibilidade, tolerância a falhas, segurança e observabilidade.<br><br>### Explorando Novas Fronteiras<br><br>- **Golang**: Atualmente aprofundando conhecimentos em Go, com foco em **concorrência**, **performance de rede** e construção de serviços de baixa latência para infraestruturas modernas.<br><br>## 📊 GitHub Insights<br><br><p align="center"><br>  <img src="https://github-readme-stats.vercel.app/api?username=dev-danilocordeiro&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats"><br>  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dev-danilocordeiro&layout=compact&theme=radical&hide_border=true" alt="Top Languages"><br></p><br><br>## 🤝 Conecte-se e Colabore<br><br>Estou sempre aberto a discussões sobre arquitetura de software, performance e as últimas tendências em engenharia. Sinta-se à vontade para se conectar:<br><br>- **LinkedIn**: [danilocordeiro](https://www.linkedin.com/in/danilocordeirodev/)<br>- **Website/Blog Técnico**: [dev-danilocordeiro.com](https://dev-danilocordeiro.com/)<br><br>---<br><br>_Construído com paixão por código e excelência arquitetural._<br>
+# Danilo Cordeiro | Staff Software Engineer & Arquiteto de Sistemas
+
+Sou um **Staff Software Engineer** e **Arquiteto de Sistemas** com uma trajetória comprovada na liderança técnica e na entrega de soluções de software de alto impacto. Minha expertise se concentra na **otimização de performance de serviços**, na concepção e evolução de **arquiteturas de microserviços escaláveis** e na implementação de **sistemas distribuídos resilientes**.
+
+Com uma abordagem estratégica e hands-on, atuo na interseção entre tecnologia e negócio, garantindo que as escolhas arquiteturais impulsionem a inovação e a eficiência operacional. Sou apaixonado por desvendar complexidades técnicas, transformar desafios em oportunidades e capacitar equipes para construir produtos de software de excelência.
+
+## 🚀 Expertise Técnica & Liderança
+
+### Core Stack & Otimização de Performance
+
+- **Kotlin**: Mestre no desenvolvimento de aplicações modernas, reativas e performáticas, utilizando os recursos avançados da linguagem para construir sistemas robustos e de fácil manutenção.
+- **Java**: Profundo conhecimento do ecossistema Java, com especialização em **JVM Performance Tuning**, Garbage Collection e otimização de threads, garantindo a máxima eficiência e throughput para serviços de missão crítica.
+- **Spring Boot & Micronaut**: Experiência sólida na construção de APIs e microsserviços de alta performance com frameworks líderes de mercado.
+
+### Arquitetura de Sistemas & Design Distribuído
+
+- **Microservices**: Liderança na concepção, implementação e refatoração de arquiteturas baseadas em microserviços, promovendo desacoplamento, escalabilidade horizontal e resiliência.
+- **Event-Driven Architecture (EDA)**: Design e implementação de sistemas reativos e assíncronos, utilizando filas de mensagens (Kafka, RabbitMQ) e padrões de eventos para comunicação eficiente e processamento distribuído.
+- **CQRS (Command Query Responsibility Segregation)**: Aplicação estratégica de CQRS para otimizar a performance e a escalabilidade de operações de leitura e escrita, especialmente em domínios complexos com alta demanda.
+- **Hexagonal Architecture / Ports & Adapters**: Estruturação de aplicações para garantir a separação de preocupações, testabilidade, e adaptabilidade a diferentes tecnologias e infraestruturas.
+- **System Design**: Habilidade comprovada em projetar sistemas distribuídos do zero, considerando aspectos como escalabilidade, disponibilidade, tolerância a falhas, segurança e observabilidade.
+
+### Explorando Novas Fronteiras
+
+- **Golang**: Atualmente aprofundando conhecimentos em Go, com foco em **concorrência**, **performance de rede** e construção de serviços de baixa latência para infraestruturas modernas.
+
+---
+
+_Construído com paixão por código e excelência arquitetural._
 
 
 ## 🌐 Socials:
@@ -14,5 +41,3 @@
 
 ---
 [![](https://visitcount.itsvg.in/api?id=dev-danilocordeiro&icon=0&color=0)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
