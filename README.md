@@ -1,43 +1,38 @@
-# Danilo Cordeiro | Staff Software Engineer & Arquiteto de Sistemas
+# Danilo Cordeiro
 
-Sou um **Staff Software Engineer** e **Arquiteto de Sistemas** com uma trajetória comprovada na liderança técnica e na entrega de soluções de software de alto impacto. Minha expertise se concentra na **otimização de performance de serviços**, na concepção e evolução de **arquiteturas de microserviços escaláveis** e na implementação de **sistemas distribuídos resilientes**.
+**Senior Software Engineer** · Backend & Distributed Systems
 
-Com uma abordagem estratégica e hands-on, atuo na interseção entre tecnologia e negócio, garantindo que as escolhas arquiteturais impulsionem a inovação e a eficiência operacional. Sou apaixonado por desvendar complexidades técnicas, transformar desafios em oportunidades e capacitar equipes para construir produtos de software de excelência.
+Building distributed systems in Java, Kotlin, and Go — ledgers, reconciliation, event-driven architecture. 11+ years across fintech, healthcare, and retail forecasting (Arcotech, Conexa Saúde, Grupo Boticário, Inventa). The two projects below are fully-documented reference systems: real architecture decisions, trade-offs written down, tests that would catch a regression.
 
-## 🚀 Expertise Técnica & Liderança
+## Distributed Ledger System
 
-### Core Stack & Otimização de Performance
+A double-entry ledger built as four coordinated services, not four isolated demos — each one absorbs a specific hard problem (idempotency, event streaming, CQRS, bank reconciliation).
 
-- **Kotlin**: Mestre no desenvolvimento de aplicações modernas, reativas e performáticas, utilizando os recursos avançados da linguagem para construir sistemas robustos e de fácil manutenção.
-- **Java**: Profundo conhecimento do ecossistema Java, com especialização em **JVM Performance Tuning**, Garbage Collection e otimização de threads, garantindo a máxima eficiência e throughput para serviços de missão crítica.
-- **Spring Boot & Micronaut**: Experiência sólida na construção de APIs e microsserviços de alta performance com frameworks líderes de mercado.
+- **[ledger-core](https://github.com/dev-danilocordeiro/ledger-core)** — Kotlin/Spring. Idempotent posting, pessimistic locking under a global lock order, transactional outbox, zero-sum invariants enforced by the database.
+- **[ledger-gateway](https://github.com/dev-danilocordeiro/ledger-gateway)** — Kotlin/WebFlux. OAuth2 resource server, distributed rate limiting, circuit breakers — the only service exposed to the outside world.
+- **[ledger-query](https://github.com/dev-danilocordeiro/ledger-query)** — Go. CQRS read side: event-driven cache invalidation, cursor pagination, a reconciliation job that alerts on drift instead of silently correcting it.
+- **[ledger-recon](https://github.com/dev-danilocordeiro/ledger-recon)** — Go. Reconciles CNAB240 bank return files against the ledger's event stream; worker pool with backpressure and a measured throughput report.
 
-### Arquitetura de Sistemas & Design Distribuído
+## URL Shortener System
 
-- **Microservices**: Liderança na concepção, implementação e refatoração de arquiteturas baseadas em microserviços, promovendo desacoplamento, escalabilidade horizontal e resiliência.
-- **Event-Driven Architecture (EDA)**: Design e implementação de sistemas reativos e assíncronos, utilizando filas de mensagens (Kafka, RabbitMQ) e padrões de eventos para comunicação eficiente e processamento distribuído.
-- **CQRS (Command Query Responsibility Segregation)**: Aplicação estratégica de CQRS para otimizar a performance e a escalabilidade de operações de leitura e escrita, especialmente em domínios complexos com alta demanda.
-- **Hexagonal Architecture / Ports & Adapters**: Estruturação de aplicações para garantir a separação de preocupações, testabilidade, e adaptabilidade a diferentes tecnologias e infraestruturas.
-- **System Design**: Habilidade comprovada em projetar sistemas distribuídos do zero, considerando aspectos como escalabilidade, disponibilidade, tolerância a falhas, segurança e observabilidade.
+A control plane / data plane split — link creation and management (Java) is a separate deployable from redirect resolution (Go), so an outage in one never takes down the other.
 
-### Explorando Novas Fronteiras
+- **[shortlink-api](https://github.com/dev-danilocordeiro/shortlink-api)** — Java/Spring Boot. Control plane: Snowflake id generation, transactional outbox, Redis-backed rate limiting.
+- **[shortlink-edge](https://github.com/dev-danilocordeiro/shortlink-edge)** — Go. Data plane: high-volume redirect resolution and real-time click analytics.
 
-- **Golang**: Atualmente aprofundando conhecimentos em Go, com foco em **concorrência**, **performance de rede** e construção de serviços de baixa latência para infraestruturas modernas.
+## Currently exploring
 
----
+AI-augmented engineering workflows — MCP tooling and code-review agents, so engineering time goes where judgment actually matters.
 
-_Construído com paixão por código e excelência arquitetural._
+## Stack
 
+| Category | Technologies |
+|---|---|
+| Languages | Java, Kotlin, Go, TypeScript, Python |
+| Frameworks | Spring Boot, Spring WebFlux, Micronaut, NestJS |
+| Data & Messaging | PostgreSQL, Oracle, MongoDB, MySQL, Redis, Kafka, gRPC |
+| Infra & Practice | Kubernetes, Docker, AWS, GCP, DDD, Hexagonal, TDD |
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/danilocordeirodev) 
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=dev-danilocordeiro&theme=dark&hide_border=true&include_all_commits=true&count_private=true)
 
-# 💻 Tech Stack:
-![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Datadog](https://img.shields.io/badge/datadog-%23632CA6.svg?style=for-the-badge&logo=datadog&logoColor=white) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white) ![Jenkins](https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white) ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white) ![AmazonDynamoDB](https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Bitbucket](https://img.shields.io/badge/bitbucket-%230047B3.svg?style=for-the-badge&logo=bitbucket&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=dev-danilocordeiro&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=dev-danilocordeiro&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=dev-danilocordeiro&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-
----
-[![](https://visitcount.itsvg.in/api?id=dev-danilocordeiro&icon=0&color=0)](https://visitcount.itsvg.in)
+**Contact:** [email](mailto:danilocordeiroti@gmail.com) · [LinkedIn](https://www.linkedin.com/in/danilocordeirodev) · [portfolio](https://dev-danilocordeiro.github.io)
